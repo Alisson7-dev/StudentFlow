@@ -13,7 +13,7 @@ document.getElementById('login-form').addEventListener('submit', async e => {
 
     if(res.ok) {
       sessionStorage.setItem('token', data.token);
-      window.location.href = '/views/dashboard.html';
+      window.location.href = '/dashboard.html';
     } else {
       document.getElementById('error').innerText = data.msg || 'Erro no login';
     }

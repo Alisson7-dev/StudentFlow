@@ -1,5 +1,5 @@
 const token = sessionStorage.getItem('token');
-if (!token) window.location.href = '/views/login.html';
+if (!token) window.location.href = '/login.html';
 
 let alunoEditandoId = null;
 
@@ -49,12 +49,12 @@ function abrirForm(aluno = null) {
     formTitle.innerText = 'Editar Aluno';
     inputNome.value = aluno.nome;
     inputEmail.value = aluno.email;
-    alunoEditandoId = aluno.id; // 🔥 guarda o id
+    alunoEditandoId = aluno.id; 
   } else {
     formTitle.innerText = 'Novo Aluno';
     inputNome.value = '';
     inputEmail.value = '';
-    alunoEditandoId = null; // 🔥 limpa
+    alunoEditandoId = null; 
   }
 }
 
@@ -100,7 +100,7 @@ async function deletarAluno(id) {
 //logout
 document.getElementById('logout')?.addEventListener('click', () => {
   sessionStorage.removeItem('token');
-  window.location.href = '/views/login.html';
+  window.location.href = '/login.html';
 });
 
 carregarAlunos();

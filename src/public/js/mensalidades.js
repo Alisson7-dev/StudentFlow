@@ -66,7 +66,7 @@ window.marcarComoPago = async function(alunoId, mensalidadeId) {
 // Logout
 document.getElementById('logout')?.addEventListener('click', () => {
   sessionStorage.removeItem('token');
-  window.location.href = '/views/login.html';
+  window.location.href = '/login.html';
 });
 
 // Inicializa tabela ao carregar a página

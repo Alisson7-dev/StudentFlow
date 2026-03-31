@@ -1,5 +1,5 @@
 const token = sessionStorage.getItem('token');
-if (!token) window.location.href = '/views/login.html';
+if (!token) window.location.href = '/login.html';
 
 async function carregarDashboard() {
   const res = await fetch('/alunos');
@@ -32,7 +32,7 @@ async function carregarDashboard() {
 //logout
 document.getElementById('logout')?.addEventListener('click', () => {
   sessionStorage.removeItem('token');
-  window.location.href = '/views/login.html';
+  window.location.href = '/login.html';
 });
 
 carregarDashboard();
