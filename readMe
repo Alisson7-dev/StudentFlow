@@ -1,0 +1,72 @@
+#  StudentFlow
+
+## Descrição 
+ StudentFlow é um sistema de gerenciamento de alunos e mensalidades. permite cadastrar alunos, gerar mensalidades automaticamente e controlar pagamentos.
+
+## Funcionalidades
+   
+   - Cadastro de alunos
+
+   - Geração automatica de mensalidades 
+
+   - Controle de pagamentos
+
+   - Status de pendente e pago
+
+## Tecnologias
+  - JavaScript
+
+  - Node.js
+
+  - Html
+
+  - Css
+
+
+## Como rodar
+
+  npm install
+
+  node server.js
+
+## Autor
+
+ Alisson7-dev
+
+
+ # ENGLISH VERSION
+
+ # StudentFlow
+
+ ## Description 
+ StudentFlow is a student and monthly payment management system. It allows you register students, automatically generate monthly fess, and track payments efficiently.
+
+ ## Features 
+
+  - Student registration
+
+  - Automatic monthly fee generation
+
+  - payment tracking
+
+  - Pending and paid status management
+
+  ## Technologies
+
+   - JavaScript
+
+   - Node.js
+
+   - Html
+
+   - Css
+
+   ## How to run
+
+   npm install
+
+   node server.js
+
+   ## Author 
+
+   Alisson7-dev

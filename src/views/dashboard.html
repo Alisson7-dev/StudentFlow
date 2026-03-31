@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+     
+  <nav>
+    <h1>Dashboard</h1>
+    <a href="alunos.html">Alunos</a> 
+    <a href="mensalidades.html">Mensalidades</a> 
+    <button id="logout">Sair</button>
+  </nav>
+ 
+<h2>Resumo</h2>
+  <div id="resumo">
+    <div class="card">
+      <h3>Total de Alunos</h3>
+      <p id="totalAlunos">0</p>
+    </div>
+    <div class="card">
+      <h3>Mensalidades Pagas</h3>
+      <p id="pagas">0</p>
+    </div>
+    <div class="card">
+      <h3>Mensalidades Pendentes</h3>
+      <p id="pendentes">0</p>
+    </div>
+    <div class="card">
+      <h3>% de Pagamentos</h3>
+      <p id="percentual">0%</p>
+    </div>
+  </div>
+
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

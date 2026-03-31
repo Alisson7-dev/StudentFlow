@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos | Gym manager</title>
+    <link rel="stylesheet" href="/css/aluno.css">
+</head>
+<body>
+    <nav>
+   <div id="cabecalho">     
+<h1>Alunos</h1>
+    <a href="dashboard.html">dashboard</a> 
+    <a href="mensalidades.html">Mensalidades</a> 
+    <div id="cabecalhoBtn">
+        <button id="btnAdd">Adicionar Aluno</button>  
+        <button id="logout">Sair</button>
+    </div>
+   </div> 
+  </nav>
+
+<div id="formContainer" style="display:none;">
+  <div>
+    <h2 id="title">Cadastrar Aluno</h2>
+
+    <input  id="nome" type="text" placeholder="Nome">
+    <input id="email" type="email" placeholder="Email">
+
+    <button id="salvar">Salvar</button>
+    <button id="cancelar">Cancelar</button>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody id="listaAlunos"></tbody>
+</table>
+
+<script src="/js/alunos.js" defer></script>
+</body>
+</html>

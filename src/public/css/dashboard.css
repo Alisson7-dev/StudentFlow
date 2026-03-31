@@ -1,0 +1,93 @@
+/* Dashboard */
+body {
+    background-color: #0a1a2a;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+nav a, nav button {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav button {
+    padding: 7px 15px;
+     background:  #c22405;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+nav button:hover{
+    background: #f72f2f;
+    
+}
+
+
+#resumo {
+    display: flex;
+    gap: 20px;
+    margin: 20px 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #223355;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #66ccff;
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #resumo {
+        flex-direction: column;
+        margin: 20px;
+        
+    }
+
+    .card {
+        width: 100%;
+         box-sizing: border-box;
+    }
+    .card {
+    transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+}
