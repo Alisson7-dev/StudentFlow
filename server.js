@@ -13,18 +13,7 @@ app.use(express.json())
 
 app.use(express.static(path.join(__dirname, 'src', 'public')));
 
-app.get("/views/login.html", (req,res) => {
-  res.sendFile(path.join(__dirname, "src", "views", "login.html"))
-})
-app.get('/views/dashboard.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src', 'views', 'dashboard.html'));
-});
-app.get('/views/alunos.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src', 'views', 'alunos.html'));
-});
-app.get('/views/mensalidades.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src', 'views', 'mensalidades.html'));
-});
+
 
 app.use("/", authRoutes)
 app.use("/alunos", alunoRoutes)
