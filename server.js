@@ -13,7 +13,7 @@ app.use(express.json())
 
 app.use(express.static(path.join(__dirname, 'src', 'public')));
 
-app.get("/", (req,res) => {
+app.get("/views/dashboard.html", (req,res) => {
   res.sendFile(path.join(__dirname, "src", "views", "login.html"))
 })
 app.get('/views/dashboard.html', (req, res) => {
