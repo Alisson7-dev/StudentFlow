@@ -1,3 +1,6 @@
+const token = sessionStorage.getItem('token');
+if (!token) window.location.href = '/views/login.html';
+
 async function carregarDashboard() {
   const res = await fetch('/alunos');
   const alunos = await res.json();
@@ -29,7 +32,7 @@ async function carregarDashboard() {
 //logout
 document.getElementById('logout')?.addEventListener('click', () => {
   sessionStorage.removeItem('token');
-  window.location.href = '/login.html';
+  window.location.href = '/views/login.html';
 });
 
 carregarDashboard();

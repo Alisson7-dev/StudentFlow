@@ -1,3 +1,6 @@
+const token = sessionStorage.getItem('token');
+if (!token) window.location.href = '/views/login.html';
+
 let alunoEditandoId = null;
 
 const API =  ("/alunos")
@@ -97,7 +100,7 @@ async function deletarAluno(id) {
 //logout
 document.getElementById('logout')?.addEventListener('click', () => {
   sessionStorage.removeItem('token');
-  window.location.href = '/login.html';
+  window.location.href = '/views/login.html';
 });
 
 carregarAlunos();

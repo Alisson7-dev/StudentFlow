@@ -1,5 +1,5 @@
 const token = sessionStorage.getItem('token');
-if (!token) window.location.href = 'login.html';
+if (!token) window.location.href = '/views/login.html';
 
 const tabelaPagas = document.getElementById('pagas');
 const tabelaPendentes = document.getElementById('pendentes');
@@ -27,7 +27,7 @@ async function carregarMensalidades() {
               ? `<button class="paga" onclick="marcarComoPago(${m.alunoId}, ${m.mensalidadeId})">
                    Marcar como paga
                  </button>`
-              : `<span style="color: green;"> </span>`
+              : `<span style="color: green;"></span>`
             }
           </td>
         </tr>
@@ -66,7 +66,7 @@ window.marcarComoPago = async function(alunoId, mensalidadeId) {
 // Logout
 document.getElementById('logout')?.addEventListener('click', () => {
   sessionStorage.removeItem('token');
-  window.location.href = '/login.html';
+  window.location.href = '/views/login.html';
 });
 
 // Inicializa tabela ao carregar a página
