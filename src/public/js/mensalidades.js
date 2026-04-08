@@ -7,7 +7,7 @@ const tabelaPendentes = document.getElementById('pendentes');
 // Função para carregar e renderizar mensalidades
 async function carregarMensalidades() {
   try {
-    const res = await fetch('http://localhost:3000/alunos/mensalidades', {
+    const res = await fetch('/alunos/mensalidades', {
       headers: { Authorization: `Bearer ${token}` }
     });
     const data = await res.json();
