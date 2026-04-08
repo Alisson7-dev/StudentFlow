@@ -12,11 +12,11 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+app.use("/", authRoutes)
 app.use(express.static(path.join(__dirname, 'src', 'public')));
 
 
 
-app.use("/", authRoutes)
 app.use("/alunos", alunoRoutes)
 app.use("/dashboard",dashboardRoutes)
 
