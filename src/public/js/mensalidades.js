@@ -48,7 +48,7 @@ async function carregarMensalidades() {
 // Função global pra marcar mensalidade como paga
 window.marcarComoPago = async function(alunoId, mensalidadeId) {
   try {
-    await fetch(`http://localhost:3000/alunos/${alunoId}/mensalidades/${mensalidadeId}`, {
+    await fetch(`/alunos/${alunoId}/mensalidades/${mensalidadeId}`, {
       method: 'PUT',
       headers: {
         Authorization: `Bearer ${token}`,
