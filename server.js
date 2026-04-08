@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'src', 'public',"login.html")))
 
 
 
-app.use("/login", authRoutes)
+app.use("/", authRoutes)
 app.use("/alunos", alunoRoutes)
 app.use("/dashboard",dashboardRoutes)
 
