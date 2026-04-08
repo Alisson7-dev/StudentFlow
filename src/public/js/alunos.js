@@ -3,7 +3,7 @@ if (!token) window.location.href = '/login.html';
 
 let alunoEditandoId = null;
 
-const API =  ("http://localhost:3000/alunos")
+const API =  ("/alunos")
 
 const formContainer = document.getElementById('formContainer');
 const formTitle = document.getElementById('title');
