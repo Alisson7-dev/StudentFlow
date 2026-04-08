@@ -2,7 +2,7 @@ const token = sessionStorage.getItem('token');
 if (!token) window.location.href = '/login.html';
 
 async function carregarDashboard() {
-  const res = await fetch('http://localhost:3000/alunos');
+  const res = await fetch('/alunos');
   const alunos = await res.json();
 
   let pagas = 0;
