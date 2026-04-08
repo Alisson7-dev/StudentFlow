@@ -15,7 +15,7 @@ app.use(express.json())
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "src", "public", "login.html"));
 });
-app.use(express.static(path.join(__dirname, 'src', 'public',"login.html")))
+app.use(express.static(path.join(__dirname, 'src', 'public')))
 
 
 
